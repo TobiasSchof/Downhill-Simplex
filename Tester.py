@@ -13,5 +13,5 @@ p=[]
 for i in range(0, 3):
     p.append(random.randrange(-1,2,2)*random.randrange(10000, 100000)/1000)
     
-simp=Simplex(Functions.sumSquares, 3, p, 3)
+simp=Simplex(Functions.sumSquares, 3, p, 100)
 print(simp.randRun(100, 0, .01))
